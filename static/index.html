@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>릴스 수집기</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">릴스 수집기</div>
+    <nav id="nav">
+      <a href="#/keywords">키워드</a>
+      <a href="#/runs">실행</a>
+      <a href="#/dashboard">대시보드</a>
+      <a href="#/retention">보관·알림</a>
+    </nav>
+    <div id="provider-badge" class="provider-badge"></div>
+  </header>
+  <main id="app"></main>
+  <div id="toast" class="toast" hidden></div>
+  <dialog id="player">
+    <div class="player-head"><strong id="player-title"></strong><button class="btn ghost" onclick="player.close()">닫기</button></div>
+    <video id="player-video" controls playsinline></video>
+    <div id="player-meta" class="muted small"></div>
+  </dialog>
+  <script src="/static/app.js"></script>
+</body>
+</html>
